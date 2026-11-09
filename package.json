@@ -1,0 +1,12 @@
+{
+  "name": "ticket-runner-opencode-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./plugin/index.ts" },
+  "bin": { "ticket-runner": "./bin/ticket-runner.mjs" },
+  "scripts": { "test": "node --test", "check": "tsc --noEmit" },
+  "dependencies": { "@opencode/plugin": "latest" },
+  "devDependencies": { "typescript": "^5.9.3", "@types/node": "^22.0.0" },
+  "engines": { "node": ">=20" }
+}

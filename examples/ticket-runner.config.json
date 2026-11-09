@@ -1,0 +1,15 @@
+{
+  "models": {
+    "implementer": ["REPLACE_WITH_CONNECTED_FREE_MODEL_A", "REPLACE_WITH_CONNECTED_FREE_MODEL_C"],
+    "reviewer": ["REPLACE_WITH_CONNECTED_FREE_MODEL_B", "REPLACE_WITH_CONNECTED_FREE_MODEL_D"]
+  },
+  "checks": [
+    { "name": "tests", "command": "npm test -- --run" },
+    { "name": "typecheck", "command": "npm run typecheck" }
+  ],
+  "maxReviewCycles": 3,
+  "turnTimeoutMs": 900000,
+  "selectionTimeoutMs": 15000,
+  "implementerAgent": "ticket-implementer",
+  "reviewerAgent": "ticket-reviewer"
+}
